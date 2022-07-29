@@ -31,12 +31,21 @@ nav {
   width: 20%;
   margin: 10px;
   display: flex;
-  
+  animation: ease-out animat 1s;
+}
+
+@keyframes animat {
+  0% {
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
 }
 
 ul {
   display: flex;
-  list-style: none;
+  list-style: none; 
   justify-content: flex-end;
   align-items: center;
 }
@@ -156,6 +165,11 @@ footer {
 .row {
   width: 100%;
   padding: 20px;
+  transition: 2s ease all;
+}
+
+.col:hover{
+  transform: scale(1.07);
 }
 
 .card-img-top{
