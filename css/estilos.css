@@ -1,0 +1,386 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
+
+
+body {
+  background-color: white;
+  color: #32b359;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  color: #32b359;
+  padding: 5px;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 20%;
+  margin: 10px;
+  display: flex;
+  
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+ul li {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+ul li a {
+  font-family: "Exo", sans-serif;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #32b359;
+  margin: 10px;
+}
+
+footer {
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+  background-color: white;
+  color: #32b359;
+  padding: 10px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* index */
+
+.carousel-item{
+  height: 520px;
+}
+
+.nosotros__contenedor {
+  font-family: "Exo", sans-serif;
+  margin: 15px;
+  display: flex;
+}
+
+.nosotros__contenedor--titulo{
+  font-size: 2rem;
+  color:#32b359;
+  margin-bottom: 5px;
+}
+
+.nosotros__contenedor--parrafo {
+  font-size: 1rem;
+  color: black;
+  margin-right: 15px;
+}
+
+.nosotros__contenedor-img{
+  margin-right: 15px;
+}
+
+.historia__contenedor{
+  font-family: "Exo", sans-serif;
+  margin: 15px;
+}
+
+.historia__contenedor-titulo{
+  font-size: 1.5rem;
+  color:#32b359 ;
+}
+
+.historia__contenedor--parrafo{
+  font-size: 1rem;
+  color: black;
+}
+
+.aside__contenedor{
+  font-family: "Exo", sans-serif;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.aside__contenedor--titulo {
+  font-size: 1.5rem;
+  color:#32b359 ;
+}
+
+.aside__contenedor--items {
+  font-size: 1rem;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* productos */
+.titulo-productos {
+  font-family: "Exo", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.productos__container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.productos__container--img{
+  width: 400px;
+  height: 300px;
+  margin: 15px;
+}
+
+/* procutos items */
+.row {
+  width: 100%;
+  padding: 20px;
+}
+
+.card-img-top{
+  height: 250px;
+}
+
+.caracteristicas__container{
+  font-family: "Exo", sans-serif;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.caracteristica__container--img{
+  width: 30%;
+  margin: 15px;
+}
+
+.caracteristicas__container--article{
+margin: 15px;
+}
+
+.caracteristicas__container--titulo{
+  margin-bottom: 5px;
+}
+
+.accesorios__container{
+  font-family: "Exo", sans-serif;
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.accesorios__container--article1{
+  display: flex;
+  margin: 15px;
+}
+
+.accesorios__container--incluidos{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.accesorios__container--article2{
+  margin-right: 15px;
+}
+
+.accesorios__container--opcionales{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*galeria (GRID)*/
+.galeria__container {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  justify-items: center;
+  gap: 15px;
+}
+
+.galeria__container--img{
+  width: 400px;
+  height: 250px;
+  transition: 0.3s ease all;
+}
+
+.galeria__container--img:hover {
+  transform: scale(1.1);
+}
+
+/* contacto */
+.titulo-contacto {
+  font-family: "Exo", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.main__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+  height: 509px;
+}
+
+.form__container--fieldset {
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+  color: #32b359;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: #32b359;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-form {
+  font-family: "Exo", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #32b359;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #32b359;
+}
+
+.item-info{
+  font-family: "Exo", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ubicacion__container-maps{
+  width: 600px;
+  height: 400px;
+}
+
+/* media queries */
+@media only screen and (max-width: 768px){
+
+}
+
+
+/* mobile */
+@media only screen and (max-width: 576px){
+
+  /* estilos generales */
+  .logo {
+    width: 50%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* index */
+
+  .img-main-index {
+    width: 570px;
+    height: 250px;
+    margin: 10px;
+  }
+
+  .nosotros__contenedor {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .nosotros__contenedor-img{
+    margin: 20px;
+  }
+
+  .historia__contenedor {
+    margin: 20px;
+  }
+
+  .aside__contenedor {
+    margin: 20px;
+  }
+
+  /* productos */
+  .productos__container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* productos items */
+  .caracteristicas__container{
+    flex-direction: column;
+  }
+
+  .caracteristica__container--img{
+    width: 90%;
+  }
+
+  .accesorios__container{
+    flex-direction: column;
+  }
+
+.accesorios__container--article2{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+  /* galeria */
+  .galeria__container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+  }
+
+  /* contacto */
+  .main__container{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .ubicacion__container{
+    margin: 30px;
+  }
+
+  .maps{
+    width: 500px;
+    height: 350px;
+
+  }
+
+  }
+
+
+
