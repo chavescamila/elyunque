@@ -5,25 +5,42 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/icons/icono-yunque.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/estilos.css">
         <title>El Yunque-Galeria</title>
     </head>
     <body>
         <header>
-            <nav>
-                <img class="logo" src="../assets/icons/logo-yunque-nuevo.png" alt="logo-yunque" width="200px">
-                <ul>
-                    <li> <a href="../index.html">Inicio</a></li>
-                    <li> <a href="./productos.html">Productos</a></li>
-                    <li> <a href="./galeria.html">Galeria</a></li>
-                    <li> <a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"> <img class="logo" src="../assets/icons/logo-yunque-nuevo.png" alt="logoyunque"> </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <section class="caracteristicas__container">
             <article class="caracteristicas__container--article">
                 <h2 class="caracteristicas__container--titulo">Características de construcción:</h2>
-                <p>El chasis está confeccionado en hierro UPN de 80mm e IPN de 80mm. Cuenta con elásticos que soportan hasta 3000kg, aro giratorio de 600mm a bolillas permitiendo así un giro de 360°, dos ejes macizos de 2” de espesor, lanza construida en hierro UPN 50/30 y enganche trasero. <br> En su exterior posee chapa acanalada epoxi blanca, ventanas y puertas con sistema de doble contacto con sus respectivos mosquiteros, cajón de herramientas y soporte para tubo o garrafa. <br> La estructura interna es de madera saligna, forrada con machimbre de pino de ½” y piso fenólico de 18mm. Para el aislamiento posee poliestireno expandido de 25mm x 15kg/m2 de densidad en laterales y frentes, lana de vidrio de 50mm en cámara de aire y entre techo, piso recubierto con espuma de polietileno. <br> Las casillas cuentan con instalación de 220 volt y 12 volt, gas con accesorios epoxi, agua fría y caliente con termofusión.</p>
+                <p class="caracteristicas__container--parrafo">El chasis está confeccionado en hierro UPN de 80mm e IPN de 80mm. Cuenta con elásticos que soportan hasta 3000kg, aro giratorio de 600mm a bolillas permitiendo así un giro de 360°, dos ejes macizos de 2” de espesor, lanza construida en hierro UPN 50/30 y enganche trasero. <br> En su exterior posee chapa acanalada epoxi blanca, ventanas y puertas con sistema de doble contacto con sus respectivos mosquiteros, cajón de herramientas y soporte para tubo o garrafa. <br> La estructura interna es de madera saligna, forrada con machimbre de pino de ½” y piso fenólico de 18mm. Para el aislamiento posee poliestireno expandido de 25mm x 15kg/m2 de densidad en laterales y frentes, lana de vidrio de 50mm en cámara de aire y entre techo, piso recubierto con espuma de polietileno. <br> Las casillas cuentan con instalación de 220 volt y 12 volt, gas con accesorios epoxi, agua fría y caliente con termofusión.</p>
             </article>
             <img class="caracteristica__container--img" src="../assets/img/casilla-contoldo.jpg" alt="casilla-2p">
         </section>
@@ -71,12 +88,18 @@
 
         <footer>
             <div>
-            <h4 class="footer-text">Desarrollado por Camila Chaves 2022</h4>
+            <h6 class="footer-text">Desarrollado por Camila Chaves 2022</h6>
             </div>
-            <div class="footer-icons">      
-                <img src="../assets/icons/icono_fb.png" alt="icono_facebook" width="40px">
-                <img src="../assets/icons/icons_instagram.png" alt="icono_instagram" width="40px">
+            <div>      
+                <ul class="footer-icons">
+                    <li><i class="bi bi-facebook"></i></li>
+                    <li><i class="bi bi-instagram"></i></li>
+                    <li><i class="bi bi-twitter"></i></li>
+                </ul>
             </div>
         </footer>
+        <!-- script -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     </body>
 </html>
