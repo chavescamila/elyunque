@@ -11,11 +11,11 @@ body {
   color: #32b359;
 }
 
-header{
+/* header{
   position: sticky;
   top: 0;
-  /* esto no me funciona!!! preguntar a vani??? */
-}
+  esto no me funciona!!! preguntar a vani???
+} */
 
 .navbar{
   background-color: white;
@@ -51,31 +51,6 @@ header{
   }
 }
 
-/* ul {
-  display: flex;
-  list-style: none; 
-  justify-content: flex-end;
-  align-items: center;
-}
-
-ul li {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-
-}
-
-ul li a {
-  font-family: "Exo", sans-serif;
-  font-size: 1.3rem;
-  text-decoration: none;
-  color: #32b359;
-  margin: 10px;
-} */
-
-
-
-
 footer {
   font-family: "Exo", sans-serif;
   font-size: 0.7rem;
@@ -95,7 +70,6 @@ i{
 .footer-icons{
   list-style: none;
   display: flex;
-
 }
 
 /* index */
@@ -106,42 +80,55 @@ i{
 
 .nosotros__contenedor {
   font-family: "Exo", sans-serif;
-  margin: 15px;
   display: flex;
+  margin-top: 40px;
+}
+
+.nosotros__contenedor--article{
+  background-image: linear-gradient(180deg,rgba(83,124,66,.35) 0,hsla(0,0%,100%,.01) 99%,hsla(0,0%,100%,0));
+  position: relative;
+  padding: 50px
 }
 
 .nosotros__contenedor--titulo{
   font-size: 2rem;
-  color:#32b359;
+  font-weight: bold;
+  color:#455a64;
+  margin: 15px;
   margin-bottom: 5px;
 }
 
 .nosotros__contenedor--parrafo {
+  margin: 15px;
+  color:#455a64;
   font-size: 1rem;
-  color: black;
-  margin-right: 15px;
 }
 
-.nosotros__contenedor-img{
-  margin-right: 15px;
+.nosotros__contenedor--img {
+  width: 40%;
 }
 
 .historia__contenedor{
   font-family: "Exo", sans-serif;
-  margin: 15px;
+  margin: 30px;
+  display: flex;
 }
 
-.historia__contenedor-titulo{
+.historia__contenedor--img{
+  margin-right: 20px;
+}
+
+.historia__contenedor--titulo{
   font-size: 1.5rem;
   color:#32b359 ;
 }
 
 .historia__contenedor--parrafo{
   font-size: 1rem;
-  color: black;
+  color:#455a64;
 }
 
-.aside__contenedor{
+/* .aside__contenedor{
   font-family: "Exo", sans-serif;
   margin: 15px;
   display: flex;
@@ -159,8 +146,20 @@ i{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+} */
+
+.recomendaciones {
+  color: white;
+  text-align: center;
+  background-color: #32b359;
+  margin: 50px 0;
+  display: flex
+  
 }
 
+.recomendaciones-items{
+  padding: 30px 60px;
+}
 
 /* productos */
 .titulo-productos {
@@ -350,21 +349,25 @@ section article ul li {
     height: 250px;
     margin: 10px;
   }
+  
   .nosotros__contenedor {
     flex-direction: column;
     margin: 20px;
   }
 
-  .nosotros__contenedor-img{
+  .nosotros__contenedor--img{
+    width: 500px;
     margin: 20px;
   }
 
   .historia__contenedor {
     margin: 20px;
+    flex-direction: column-reverse;
   }
 
-  .aside__contenedor {
-    margin: 20px;
+  .recomendaciones{
+    font-size: 1.6rem;
+    flex-direction: column;
   }
 
   /* productos */
