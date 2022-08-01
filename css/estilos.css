@@ -53,14 +53,41 @@ body {
 
 footer {
   font-family: "Exo", sans-serif;
-  font-size: 0.7rem;
-  background-color: white;
-  color: #32b359;
-  padding: 10px;
-  height: 60px;
+  font-size: 1.2rem;
+  background-color: rgb(36, 36, 36);
+  color:  grey;
+  border-top: solid 5px #32b359;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 100%;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+.footer__container{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer__container--titulo{
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.footer__container--menu-lista{
+  list-style: none;
+  text-decoration: none;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover{
+  color: #32b35991;
 }
 
 i{
@@ -73,7 +100,29 @@ i{
 }
 
 .bi{
-  margin: 0 5px;
+  margin: 0 7px;
+  color: #32b35991;
+}
+
+
+
+.footer__container--datos-lista{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconos-datos{
+  font-size: 1.2rem;
+  color: #32b35991;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-caret-right {
+  color: #32b35991;
+  font-size: 1.1rem;
+  margin-right: 5px;
 }
 
 /* index */
