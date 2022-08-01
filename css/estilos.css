@@ -6,6 +6,7 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
 
+
 body {
   background-color: white;
   color: #32b359;
@@ -19,6 +20,10 @@ body {
 
 .navbar{
   background-color: white;
+}
+
+.nav-item{
+  margin-right: 20px;
 }
 .navbar-light .navbar-nav .nav-link{
   font-family: "Exo", sans-serif;
@@ -35,9 +40,14 @@ body {
   color: #32b35991;
 }
 
+.container-fluid{
+  padding: 0px;
+  margin: 0px;
+}
+
 .logo {
-  width: 300px;
-  margin: 10px;
+  width: 250px;
+  margin-left: 10px;
   display: flex;
   animation: ease-out animat 1s;
 }
