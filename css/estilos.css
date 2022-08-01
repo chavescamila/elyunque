@@ -6,7 +6,6 @@
 /*fonts*/
 @import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
 
-
 body {
   background-color: white;
   color: #32b359;
@@ -18,14 +17,14 @@ body {
   esto no me funciona!!! preguntar a vani???
 } */
 
-.navbar{
+.navbar {
   background-color: white;
 }
 
-.nav-item{
+.nav-item {
   margin-right: 20px;
 }
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
   font-family: "Exo", sans-serif;
   font-size: 1.3rem;
   text-decoration: none;
@@ -40,7 +39,7 @@ body {
   color: #32b35991;
 }
 
-.container-fluid{
+.container-fluid {
   padding: 0px;
   margin: 0px;
 }
@@ -56,7 +55,7 @@ body {
   0% {
     transform: scale(0);
   }
-  100%{
+  100% {
     transform: scale(1);
   }
 }
@@ -65,62 +64,62 @@ footer {
   font-family: "Exo", sans-serif;
   font-size: 1.2rem;
   background-color: rgb(36, 36, 36);
-  color:  grey;
+  color: grey;
   border-top: solid 5px #32b359;
   padding-top: 40px;
   padding-bottom: 40px;
   height: 100%;
 }
 
-ul{
+ul {
   padding-left: 0px;
 }
 
-.footer__container{
+.footer__container {
   display: flex;
   justify-content: space-evenly;
 }
 
-.footer__container--titulo{
+.footer__container--titulo {
   color: whitesmoke;
   margin-bottom: 20px;
 }
 
-.footer__container--menu-lista{
+.footer__container--menu-lista {
   list-style: none;
   text-decoration: none;
 }
 
-a{
+a {
   text-decoration: none;
   color: grey;
 }
 
-a:hover{
+a:hover {
   color: #32b35991;
 }
 
-i{
+i {
   font-size: 1.8rem;
 }
 
-.footer-icons{
+.footer-icons {
   list-style: none;
   display: flex;
 }
 
-.bi{
+.bi {
   margin: 0 7px;
   color: #32b35991;
 }
 
-.footer__container--datos-lista{
+.footer__container--datos-lista {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.iconos-datos{
+.iconos-datos {
   font-size: 1.2rem;
   color: #32b35991;
   margin-right: 10px;
@@ -135,7 +134,7 @@ i{
 
 /* index */
 
-.carousel-item{
+.carousel-item {
   height: 520px;
 }
 
@@ -145,23 +144,28 @@ i{
   margin-top: 40px;
 }
 
-.nosotros__contenedor--article{
-  background-image: linear-gradient(180deg,rgba(83,124,66,.35) 0,hsla(0,0%,100%,.01) 99%,hsla(0,0%,100%,0));
+.nosotros__contenedor--article {
+  background-image: linear-gradient(
+    180deg,
+    rgba(83, 124, 66, 0.35) 0,
+    hsla(0, 0%, 100%, 0.01) 99%,
+    hsla(0, 0%, 100%, 0)
+  );
   position: relative;
-  padding: 50px
+  padding: 50px;
 }
 
-.nosotros__contenedor--titulo{
+.nosotros__contenedor--titulo {
   font-size: 2rem;
   font-weight: bold;
-  color:#455a64;
+  color: #455a64;
   margin: 15px;
   margin-bottom: 5px;
 }
 
 .nosotros__contenedor--parrafo {
   margin: 15px;
-  color:#455a64;
+  color: #455a64;
   font-size: 1rem;
 }
 
@@ -169,24 +173,24 @@ i{
   width: 40%;
 }
 
-.historia__contenedor{
+.historia__contenedor {
   font-family: "Exo", sans-serif;
   margin: 30px;
   display: flex;
 }
 
-.historia__contenedor--img{
+.historia__contenedor--img {
   margin-right: 20px;
 }
 
-.historia__contenedor--titulo{
+.historia__contenedor--titulo {
   font-size: 1.5rem;
-  color:#32b359 ;
+  color: #32b359;
 }
 
-.historia__contenedor--parrafo{
+.historia__contenedor--parrafo {
   font-size: 1rem;
-  color:#455a64;
+  color: #455a64;
 }
 
 .recomendaciones {
@@ -194,10 +198,10 @@ i{
   text-align: center;
   background-color: #32b359;
   margin: 50px 0;
-  display: flex
+  display: flex;
 }
 
-.recomendaciones-items{
+.recomendaciones-items {
   padding: 30px 60px;
 }
 
@@ -209,13 +213,13 @@ i{
   justify-content: center;
 }
 
-.productos__container{
+.productos__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.productos__container--img{
+.productos__container--img {
   width: 400px;
   height: 300px;
   margin: 15px;
@@ -228,35 +232,35 @@ i{
   transition: 2s ease all;
 }
 
-.col:hover{
+.col:hover {
   transform: scale(1.07);
 }
 
-.card-img-top{
+.card-img-top {
   height: 250px;
 }
 
-.caracteristicas__container{
+.caracteristicas__container {
   font-family: "Exo", sans-serif;
   margin: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.caracteristica__container--img{
+.caracteristica__container--img {
   width: 30%;
   margin: 15px;
 }
 
-.caracteristicas__container--article{
-margin: 15px;
+.caracteristicas__container--article {
+  margin: 15px;
 }
 
-.caracteristicas__container--titulo{
+.caracteristicas__container--titulo {
   margin-bottom: 5px;
 }
 
-.caracteristicas__container--parrafo{
+.caracteristicas__container--parrafo {
   color: black;
 }
 
@@ -264,7 +268,7 @@ section article ul li {
   color: black;
 }
 
-.accesorios__container{
+.accesorios__container {
   font-family: "Exo", sans-serif;
   margin: 15px;
   display: flex;
@@ -272,17 +276,16 @@ section article ul li {
   align-items: flex-start;
 }
 
-.accesorios__container--article1{
+.accesorios__container--article1 {
   display: flex;
-
 }
 
-.accesorios__container--incluidos{
+.accesorios__container--incluidos {
   flex-direction: column;
   align-items: flex-start;
 }
 
-.accesorios__container--opcionales{
+.accesorios__container--opcionales {
   flex-direction: column;
   align-items: flex-start;
 }
@@ -297,7 +300,7 @@ section article ul li {
   gap: 15px;
 }
 
-.galeria__container--img{
+.galeria__container--img {
   width: 400px;
   height: 250px;
   transition: 0.3s ease all;
@@ -319,12 +322,12 @@ section article ul li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 30px;
 }
 
 .form__container {
   display: flex;
   justify-content: center;
-  height: 509px;
 }
 
 .form__container--fieldset {
@@ -334,7 +337,7 @@ section article ul li {
   background-color: white;
   padding: 15px;
   border-radius: 5px;
-  border-color: #32b359;
+  border: 1px solid #32b359;
   display: flex;
   flex-direction: column;
 }
@@ -349,11 +352,11 @@ section article ul li {
   border-color: #32b359;
 }
 
-.formulario__container{
+.formulario__container {
   display: flex;
 }
 
-.item-info{
+.item-info {
   list-style: none;
   font-family: "Exo", sans-serif;
   font-size: 1rem;
@@ -361,43 +364,40 @@ section article ul li {
   justify-content: space-around;
 }
 
-.ubicacion__container-maps{
+.ubicacion__container-maps {
   width: 600px;
-  height: 400px;
+  height: 610px;
 }
 
 /* media queries */
-@media only screen and (max-width: 768px){
-
+@media only screen and (max-width: 768px) {
 }
 
-
 /* mobile */
-@media only screen and (max-width: 576px){
-
+@media only screen and (max-width: 576px) {
   /* estilos generales */
   .logo {
     width: 50%;
   }
 
-  footer {
-    flex-direction: column;
-    justify-content: center;
-  }
+.footer__container{
+  flex-direction: column;
+  margin-left: 30px;
+}
 
   /* index */
-  .carousel-item{
+  .carousel-item {
     width: 560px;
     height: 250px;
     margin: 10px;
   }
-  
+
   .nosotros__contenedor {
     flex-direction: column;
     margin: 20px;
   }
 
-  .nosotros__contenedor--img{
+  .nosotros__contenedor--img {
     width: 500px;
     margin: 20px;
   }
@@ -407,59 +407,56 @@ section article ul li {
     flex-direction: column-reverse;
   }
 
-  .recomendaciones{
+  .recomendaciones {
     font-size: 1.6rem;
     flex-direction: column;
   }
 
   /* productos */
-  .productos__container{
+  .productos__container {
     flex-direction: column;
     align-items: center;
   }
 
   /* productos items */
-  .caracteristicas__container{
+  .caracteristicas__container {
     flex-direction: column;
   }
 
-  .caracteristica__container--img{
+  .caracteristica__container--img {
     width: 90%;
   }
 
-  .accesorios__container{
+  .accesorios__container {
     flex-direction: column;
   }
 
-.accesorios__container--article2{
-  margin-top: 20px;
-  margin-left: 15px;
-}
+  .accesorios__container--article2 {
+    margin-top: 20px;
+    margin-left: 15px;
+  }
 
   /* galeria */
-  .galeria__container{
+  .galeria__container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(15, 1fr);
   }
 
   /* contacto */
-  .main__container{
+  .main__container {
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 30px;
   }
 
-  .ubicacion__container{
+  .ubicacion__container {
     margin: 30px;
   }
 
-  .maps{
+  .maps {
     width: 500px;
     height: 350px;
-
   }
-
-  }
+}
 
 
 
