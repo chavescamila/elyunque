@@ -72,6 +72,10 @@ i{
   display: flex;
 }
 
+.bi{
+  margin: 0 5px;
+}
+
 /* index */
 
 .carousel-item{
@@ -308,6 +312,10 @@ section article ul li {
   padding: 5px;
   border-radius: 5px;
   border-color: #32b359;
+}
+
+.formulario__container{
+  display: flex;
 }
 
 .item-info{
