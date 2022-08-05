@@ -229,11 +229,6 @@ i {
 .row {
   width: 100%;
   padding: 20px;
-  transition: 2s ease all;
-}
-
-.col:hover {
-  transform: scale(1.07);
 }
 
 .card-img-top {
@@ -293,6 +288,7 @@ section article ul li {
 /*galeria (GRID)*/
 .galeria__container {
   margin: 15px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
