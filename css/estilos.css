@@ -1,289 +1,227 @@
+@import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
 * {
   margin: 0%;
-  padding: 0%;
-}
-
-/*fonts*/
-@import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
+  padding: 0%; }
 
 body {
   background-color: white;
-  color: #32b359;
-}
+  color: #32b359; }
 
 /* header{
-  position: sticky;
-  top: 0;
-  esto no me funciona!!! preguntar a vani???
+    position: sticky;
+    top: 0;
+    esto no me funciona!!! preguntar a vani???
 } */
 
 .navbar {
-  background-color: white;
-}
+  background-color: white; }
 
 .nav-item {
-  margin-right: 20px;
-}
+  margin-right: 20px; }
+
 .navbar-light .navbar-nav .nav-link {
   font-family: "Exo", sans-serif;
   font-size: 1.3rem;
   text-decoration: none;
-  color: #32b359;
-}
+  color: #32b359; }
 
 .navbar-collapse {
-  flex-grow: initial;
-}
+  flex-grow: initial; }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #32b35991;
-}
+  color: #32b35991; }
 
 .container-fluid {
   padding: 0px;
-  margin: 0px;
-}
+  margin: 0px; }
 
 .logo {
   width: 250px;
   margin-left: 10px;
   display: flex;
-  animation: ease-out animat 1s;
-}
+  animation: ease-out animat 1s; }
 
 @keyframes animat {
   0% {
-    transform: scale(0);
-  }
+    transform: scale(0); }
   100% {
-    transform: scale(1);
-  }
-}
+    transform: scale(1); } }
 
 footer {
   font-family: "Exo", sans-serif;
   font-size: 1.2rem;
-  background-color: rgb(36, 36, 36);
+  background-color: #242424;
   color: grey;
   border-top: solid 5px #32b359;
   padding-top: 40px;
   padding-bottom: 40px;
-  height: 100%;
-}
+  height: 100%; }
 
 ul {
-  padding-left: 0px;
-}
+  padding-left: 0px; }
 
 .footer__container {
   display: flex;
-  justify-content: space-evenly;
-}
+  justify-content: space-evenly; }
 
 .footer__container--titulo {
   color: whitesmoke;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .footer__container--menu-lista {
   list-style: none;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a {
   text-decoration: none;
-  color: grey;
-}
-
-a:hover {
-  color: #32b35991;
-}
+  color: grey; }
+  a:hover {
+    color: #32b35991; }
 
 i {
-  font-size: 1.8rem;
-}
+  font-size: 1.8rem; }
 
-.footer-icons {
+.footer-icons, .footer__container--datos-lista {
   list-style: none;
-  display: flex;
-}
+  display: flex; }
 
 .bi {
   margin: 0 7px;
-  color: #32b35991;
-}
+  color: #32b35991; }
 
 .footer__container--datos-lista {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .iconos-datos {
   font-size: 1.2rem;
   color: #32b35991;
   margin-right: 10px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .fa-caret-right {
   color: #32b35991;
   font-size: 1.1rem;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 
 /* index */
-
 .carousel-item {
-  height: 520px;
-}
+  height: 520px; }
 
 .nosotros__contenedor {
   font-family: "Exo", sans-serif;
   display: flex;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
 .nosotros__contenedor--article {
-  background-image: linear-gradient(
-    180deg,
-    rgba(83, 124, 66, 0.35) 0,
-    hsla(0, 0%, 100%, 0.01) 99%,
-    hsla(0, 0%, 100%, 0)
-  );
+  background-image: linear-gradient(180deg, rgba(83, 124, 66, 0.35) 0, rgba(255, 255, 255, 0.01) 99%, rgba(255, 255, 255, 0));
   position: relative;
-  padding: 50px;
-}
+  padding: 50px; }
 
 .nosotros__contenedor--titulo {
   font-size: 2rem;
   font-weight: bold;
   color: #455a64;
   margin: 15px;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 .nosotros__contenedor--parrafo {
   margin: 15px;
   color: #455a64;
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 .nosotros__contenedor--img {
-  width: 40%;
-}
+  width: 40%; }
 
 .historia__contenedor {
   font-family: "Exo", sans-serif;
   margin: 30px;
-  display: flex;
-}
+  display: flex; }
 
 .historia__contenedor--img {
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 .historia__contenedor--titulo {
   font-size: 1.5rem;
-  color: #32b359;
-}
+  color: #32b359; }
 
 .historia__contenedor--parrafo {
   font-size: 1rem;
-  color: #455a64;
-}
+  color: #455a64; }
 
 .recomendaciones {
   color: white;
   text-align: center;
   background-color: #32b359;
   margin: 50px 0;
-  display: flex;
-}
+  display: flex; }
 
 .recomendaciones-items {
-  padding: 30px 60px;
-}
+  padding: 30px 60px; }
 
 /* productos */
 .titulo-productos {
   font-family: "Exo", sans-serif;
   font-size: 2rem;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .productos__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .productos__container--img {
   width: 400px;
   height: 300px;
-  margin: 15px;
-}
+  margin: 15px; }
 
 /* procutos items */
 .row {
   width: 100%;
-  padding: 20px;
-}
+  padding: 20px; }
 
 .card-img-top {
-  height: 250px;
-}
+  height: 250px; }
 
 .caracteristicas__container {
   font-family: "Exo", sans-serif;
   margin: 15px;
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: space-between; }
 
 .caracteristica__container--img {
   width: 30%;
-  margin: 15px;
-}
+  margin: 15px; }
 
 .caracteristicas__container--article {
-  margin: 15px;
-}
+  margin: 15px; }
 
 .caracteristicas__container--titulo {
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 .caracteristicas__container--parrafo {
-  color: black;
-}
+  color: black; }
 
 section article ul li {
-  color: black;
-}
+  color: black; }
 
 .accesorios__container {
   font-family: "Exo", sans-serif;
   margin: 15px;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .accesorios__container--article1 {
-  display: flex;
-}
+  display: flex; }
 
 .accesorios__container--incluidos {
   flex-direction: column;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 .accesorios__container--opcionales {
   flex-direction: column;
-  align-items: flex-start;
-}
+  align-items: flex-start; }
 
 /*galeria (GRID)*/
 .galeria__container {
@@ -293,38 +231,32 @@ section article ul li {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr);
   justify-items: center;
-  gap: 15px;
-}
+  gap: 15px; }
 
 .galeria__container--img {
-  width: 400px;
   height: 250px;
-  transition: 0.3s ease all;
-}
+  width: 400px;
+  transition: 0.3s ease all; }
 
 .galeria__container--img:hover {
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
 /* contacto */
 .titulo-contacto {
   font-family: "Exo", sans-serif;
   font-size: 2rem;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .main__container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 30px;
-}
+  margin: 30px; }
 
 .form__container {
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
 
 .form__container--fieldset {
   font-family: "Exo", sans-serif;
@@ -335,8 +267,7 @@ section article ul li {
   border-radius: 5px;
   border: 1px solid #32b359;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .button-form {
   font-family: "Exo", sans-serif;
@@ -345,115 +276,18 @@ section article ul li {
   background-color: #32b359;
   padding: 5px;
   border-radius: 5px;
-  border-color: #32b359;
-}
+  border-color: #32b359; }
 
 .formulario__container {
-  display: flex;
-}
+  display: flex; }
 
 .item-info {
   list-style: none;
   font-family: "Exo", sans-serif;
   font-size: 1rem;
   display: flex;
-  justify-content: space-around;
-}
+  justify-content: space-around; }
 
 .ubicacion__container-maps {
   width: 600px;
-  height: 610px;
-}
-
-/* media queries */
-@media only screen and (max-width: 768px) {
-}
-
-/* mobile */
-@media only screen and (max-width: 576px) {
-  /* estilos generales */
-  .logo {
-    width: 50%;
-  }
-
-.footer__container{
-  flex-direction: column;
-  margin-left: 30px;
-}
-
-  /* index */
-  .carousel-item {
-    width: 560px;
-    height: 250px;
-    margin: 10px;
-  }
-
-  .nosotros__contenedor {
-    flex-direction: column;
-    margin: 20px;
-  }
-
-  .nosotros__contenedor--img {
-    width: 500px;
-    margin: 20px;
-  }
-
-  .historia__contenedor {
-    margin: 20px;
-    flex-direction: column-reverse;
-  }
-
-  .recomendaciones {
-    font-size: 1.6rem;
-    flex-direction: column;
-  }
-
-  /* productos */
-  .productos__container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* productos items */
-  .caracteristicas__container {
-    flex-direction: column;
-  }
-
-  .caracteristica__container--img {
-    width: 90%;
-  }
-
-  .accesorios__container {
-    flex-direction: column;
-  }
-
-  .accesorios__container--article2 {
-    margin-top: 20px;
-    margin-left: 15px;
-  }
-
-  /* galeria */
-  .galeria__container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(15, 1fr);
-  }
-
-  /* contacto */
-  .main__container {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .ubicacion__container {
-    margin: 30px;
-  }
-
-  .maps {
-    width: 500px;
-    height: 350px;
-  }
-  
-}
-
-
-
+  height: 610px; }

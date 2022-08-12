@@ -1,0 +1,79 @@
+/* media queries */
+/* mobile */
+
+@media only screen and (max-width: 576px) {
+
+/* estilos generales */
+.logo {
+    width: 50%;
+}
+.footer__container {
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+/* index */
+.carousel-item {
+    width: 560px;
+    height: 250px;
+    margin: 10px;
+}
+.nosotros__contenedor {
+    flex-direction: column;
+    margin: 20px;
+}
+.nosotros__contenedor--img {
+    width: 500px;
+    margin: 20px;
+}
+.historia__contenedor {
+    margin: 20px;
+    flex-direction: column-reverse;
+}
+.recomendaciones {
+    font-size: 1.6rem;
+    flex-direction: column;
+}
+
+/* productos */
+.productos__container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* productos items */
+.caracteristicas__container {
+    flex-direction: column;
+}
+.caracteristica__container--img {
+    width: 90%;
+}
+.accesorios__container {
+    flex-direction: column;
+}
+.accesorios__container--article2 {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+/* galeria */
+.galeria__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+}
+
+/* contacto */
+.main__container {
+    flex-direction: column;
+    justify-content: center;
+}
+.ubicacion__container {
+    margin: 30px;
+}
+.maps {
+    width: 500px;
+    height: 350px;
+}
+
+}
+

@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
+@import "mediaQueries.scss";
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+// maps
+$estilos: (
+    verde: #32b359,
+    verdeTransp: #32b35991,
+    blanco: white,
+    negro: black,
+    grisLetras: grey,
+);
+
+body {
+    background-color: map-get($estilos, blanco);
+    color: map-get($estilos, verde);
+}
+
+/* header{
+    position: sticky;
+    top: 0;
+    esto no me funciona!!! preguntar a vani???
+} */
+
+.navbar {
+    background-color: white;
+}
+
+.nav-item {
+    margin-right: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: "Exo", sans-serif;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #32b359;
+}
+
+.navbar-collapse {
+    flex-grow: initial;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #32b35991;
+}
+
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo {
+    width: 250px;
+    margin-left: 10px;
+    display: flex;
+    animation: ease-out animat 1s;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+footer {
+    font-family: "Exo", sans-serif;
+    font-size: 1.2rem;
+    background-color: rgb(36, 36, 36);
+    color: grey;
+    border-top: solid 5px #32b359;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100%;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer__container--titulo {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.footer__container--menu-lista {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+
+    &:hover {
+        color: rgba(50, 179, 89, 0.568627451);
+    }
+}
+
+i {
+    font-size: 1.8rem;
+}
+
+.footer-icons {
+    list-style: none;
+    display: flex;
+}
+
+.bi {
+    margin: 0 7px;
+    color: rgba(50, 179, 89, 0.568627451);
+}
+
+// extend
+.footer__container--datos-lista {
+    @extend .footer-icons;
+    flex-direction: column;
+}
+
+.iconos-datos {
+    font-size: 1.2rem;
+    color: rgba(50, 179, 89, 0.568627451);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-caret-right {
+    color: rgba(50, 179, 89, 0.568627451);
+    font-size: 1.1rem;
+    margin-right: 5px;
+}
+
+/* index */
+// vars
+$parrafo: 1 rem; 
+
+.carousel-item {
+    height: 520px;
+}
+
+.nosotros__contenedor {
+    font-family: "Exo", sans-serif;
+    display: flex;
+    margin-top: 40px;
+}
+
+.nosotros__contenedor--article {
+    background-image: linear-gradient(180deg, rgba(83, 124, 66, 0.35) 0, hsla(0deg, 0%, 100%, 0.01) 99%, hsla(0deg, 0%, 100%, 0));
+    position: relative;
+    padding: 50px;
+}
+
+.nosotros__contenedor--titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #455a64;
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.nosotros__contenedor--parrafo {
+    margin: 15px;
+    color: #455a64;
+    font-size: $parrafo;
+}
+
+.nosotros__contenedor--img {
+    width: 40%;
+}
+
+.historia__contenedor {
+    font-family: "Exo", sans-serif;
+    margin: 30px;
+    display: flex;
+}
+
+.historia__contenedor--img {
+    margin-right: 20px;
+}
+
+.historia__contenedor--titulo {
+    font-size: 1.5rem;
+    color: #32b359;
+}
+
+.historia__contenedor--parrafo {
+    font-size: $parrafo;
+    color: #455a64;
+}
+
+.recomendaciones {
+    color: white;
+    text-align: center;
+    background-color: #32b359;
+    margin: 50px 0;
+    display: flex;
+}
+
+.recomendaciones-items {
+    padding: 30px 60px;
+}
+
+/* productos */
+.titulo-productos {
+    font-family: "Exo", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.productos__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos__container--img {
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+}
+
+/* procutos items */
+.row {
+    width: 100%;
+    padding: 20px;
+}
+
+.card-img-top {
+    height: 250px;
+}
+
+.caracteristicas__container {
+    font-family: "Exo", sans-serif;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.caracteristica__container--img {
+    width: 30%;
+    margin: 15px;
+}
+
+.caracteristicas__container--article {
+    margin: 15px;
+}
+
+.caracteristicas__container--titulo {
+    margin-bottom: 5px;
+}
+
+.caracteristicas__container--parrafo {
+    color: black;
+}
+
+section article ul li {
+    color: black;
+}
+
+.accesorios__container {
+    font-family: "Exo", sans-serif;
+    margin: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.accesorios__container--article1 {
+    display: flex;
+}
+
+.accesorios__container--incluidos {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.accesorios__container--opcionales {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*galeria (GRID)*/
+.galeria__container {
+    margin: 15px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    gap: 15px;
+}
+
+
+@mixin img-size ($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+}
+.galeria__container--img {
+    @include img-size(250px, 400px);
+    transition: 0.3s ease all;
+}
+
+.galeria__container--img:hover {
+    transform: scale(1.1);
+}
+
+/* contacto */
+.titulo-contacto {
+    font-family: "Exo", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.main__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+}
+
+.form__container {
+    display: flex;
+    justify-content: center;
+}
+
+.form__container--fieldset {
+    font-family: "Exo", sans-serif;
+    font-size: 1rem;
+    color: #32b359;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #32b359;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-form {
+    font-family: "Exo", sans-serif;
+    font-size: 0.8rem;
+    color: white;
+    background-color: #32b359;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #32b359;
+}
+
+.formulario__container {
+    display: flex;
+}
+
+.item-info {
+    list-style: none;
+    font-family: "Exo", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ubicacion__container-maps {
+    width: 600px;
+    height: 610px;
+}
+
+
+
+
