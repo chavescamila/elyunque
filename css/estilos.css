@@ -1,4 +1,58 @@
 @import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
+/* media queries */
+/* mobile */
+@media only screen and (max-width: 576px) {
+  /* estilos generales */
+  .logo {
+    width: 50%; }
+  .footer__container {
+    flex-direction: column;
+    margin-left: 30px; }
+  /* index */
+  .carousel-item {
+    width: 560px;
+    height: 250px;
+    margin: 10px; }
+  .nosotros__contenedor {
+    flex-direction: column;
+    margin: 20px; }
+  .nosotros__contenedor--img {
+    width: 500px;
+    margin: 20px; }
+  .historia__contenedor {
+    margin: 20px;
+    flex-direction: column-reverse; }
+  .recomendaciones {
+    font-size: 1.6rem;
+    flex-direction: column; }
+  /* productos */
+  .productos__container {
+    flex-direction: column;
+    align-items: center; }
+  /* productos items */
+  .caracteristicas__container {
+    flex-direction: column; }
+  .caracteristica__container--img {
+    width: 90%; }
+  .accesorios__container {
+    flex-direction: column; }
+  .accesorios__container--article2 {
+    margin-top: 20px;
+    margin-left: 15px; }
+  /* galeria */
+  .galeria__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(15, 1fr); }
+  /* contacto */
+  .main__container {
+    flex-direction: column;
+    justify-content: center; }
+  .ubicacion__container {
+    margin: 30px; }
+  .maps {
+    width: 500px;
+    height: 350px; } }
+
 * {
   margin: 0%;
   padding: 0%; }
@@ -12,7 +66,6 @@ body {
     top: 0;
     esto no me funciona!!! preguntar a vani???
 } */
-
 .navbar {
   background-color: white; }
 
@@ -76,7 +129,7 @@ a {
   text-decoration: none;
   color: grey; }
   a:hover {
-    color: #32b35991; }
+    color: rgba(50, 179, 89, 0.568627); }
 
 i {
   font-size: 1.8rem; }
@@ -87,19 +140,19 @@ i {
 
 .bi {
   margin: 0 7px;
-  color: #32b35991; }
+  color: rgba(50, 179, 89, 0.568627); }
 
 .footer__container--datos-lista {
   flex-direction: column; }
 
 .iconos-datos {
   font-size: 1.2rem;
-  color: #32b35991;
+  color: rgba(50, 179, 89, 0.568627);
   margin-right: 10px;
   margin-bottom: 10px; }
 
 .fa-caret-right {
-  color: #32b35991;
+  color: rgba(50, 179, 89, 0.568627);
   font-size: 1.1rem;
   margin-right: 5px; }
 
@@ -127,7 +180,7 @@ i {
 .nosotros__contenedor--parrafo {
   margin: 15px;
   color: #455a64;
-  font-size: 1rem; }
+  font-size: 1 rem; }
 
 .nosotros__contenedor--img {
   width: 40%; }
@@ -145,7 +198,7 @@ i {
   color: #32b359; }
 
 .historia__contenedor--parrafo {
-  font-size: 1rem;
+  font-size: 1 rem;
   color: #455a64; }
 
 .recomendaciones {
@@ -291,3 +344,104 @@ section article ul li {
 .ubicacion__container-maps {
   width: 600px;
   height: 610px; }
+
+/* media queries */
+/* mobile */
+
+@media only screen and (max-width: 576px) {
+
+/* estilos generales */
+.navbar{
+  margin: 15px;
+  display: flex;
+  /* flex-wrap: nowrap; */
+}
+
+.container-fluid{
+  justify-content: space-around;
+}
+.logo {
+  width: 50%;
+  }
+
+  .footer__container {
+  flex-direction: column;
+  margin-left: 30px;
+  }
+  
+/* index */
+
+.carousel{
+  margin: 15px;
+
+}
+.carousel-inner{
+  width: 100%;
+  height: 250px;
+  }
+
+  .nosotros__contenedor {
+    flex-direction: column;
+    margin: 15px;
+      
+  }
+  .nosotros__contenedor--img {
+      width: 100%;
+      margin: 0;
+      justify-content: center;
+  }
+  .historia__contenedor {
+      margin: 15px;
+      flex-direction: column-reverse;
+      text-align: center;
+  }
+  .historia__contenedor--parrafo{
+    text-align: start;
+  }
+
+  .recomendaciones {
+      font-size: 1.6rem;
+      flex-direction: column;
+  }
+  
+  /* productos */
+  .productos__container {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  /* productos items */
+  .caracteristicas__container {
+      flex-direction: column;
+  }
+  .caracteristica__container--img {
+      width: 90%;
+  }
+  .accesorios__container {
+      flex-direction: column;
+  }
+  .accesorios__container--article2 {
+      margin-top: 20px;
+      margin-left: 15px;
+  }
+  
+  /* galeria */
+  .galeria__container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(15, 1fr);
+  }
+  
+  /* contacto */
+  .main__container {
+      flex-direction: column;
+      justify-content: center;
+  }
+  .ubicacion__container {
+      margin: 30px;
+  }
+  .maps {
+      width: 500px;
+      height: 350px;
+  }
+  
+  }
