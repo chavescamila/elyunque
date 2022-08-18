@@ -158,7 +158,9 @@ i {
 
 /* index */
 .carousel-item {
-  height: 520px; }
+  object-fit: contain;
+  height: 520px; 
+}
 
 .nosotros__contenedor {
   font-family: "Exo", sans-serif;
@@ -360,9 +362,10 @@ section article ul li {
 .container-fluid{
   justify-content: space-around;
 }
-.logo {
-  width: 50%;
-  }
+
+.nav-mediaq{
+  flex-wrap: wrap;
+}
 
   .footer__container {
   flex-direction: column;
@@ -370,10 +373,13 @@ section article ul li {
   }
   
 /* index */
+.main-mediaq{
+  display: flex;
+  justify-content: center;
+}
 
 .carousel{
   margin: 15px;
-
 }
 .carousel-inner{
   width: 100%;
@@ -383,7 +389,6 @@ section article ul li {
   .nosotros__contenedor {
     flex-direction: column;
     margin: 15px;
-      
   }
   .nosotros__contenedor--img {
       width: 100%;
