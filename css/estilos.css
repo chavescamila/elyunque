@@ -284,7 +284,7 @@ section article ul li {
   margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   justify-items: center;
   gap: 15px; }
 
