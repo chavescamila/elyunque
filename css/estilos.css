@@ -433,7 +433,7 @@ section article ul li {
   /* galeria */
   .galeria__container {
       grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(15, 1fr);
+      grid-template-rows: repeat(18, 1fr);
   }
   
   /* contacto */
