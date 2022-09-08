@@ -166,6 +166,7 @@ i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -175,13 +176,13 @@ i {
 .parallax-h1{
   font-size: 50px;
   font-weight: 800;
-  color: white;
+  color: #131212;
   text-shadow: 1px 1px 3px rgb(0 0 0 / 69%);}
 
 .parallax-text{
   font-size: 24px;
-  font-weight: 200;
-  color: white;
+  font-weight: bold;
+  color: #131212;
   margin-bottom: 20px;
   text-shadow: 1px 1px 3px rgb(0 0 0 / 69%);}
 
