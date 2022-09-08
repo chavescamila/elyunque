@@ -6,10 +6,12 @@ body {
   background-color: white;
   color: #32b359; }
 
-/* header{
-    position: sticky;
-    top: 0;
-} */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .navbar {
   background-color: white; }
 
@@ -91,7 +93,7 @@ i {
 
 .iconos-datos {
   font-size: 1.2rem;
-  color: rgba(50, 179, 89, 0.568627);
+  color: #32b35991;
   margin-right: 10px;
   margin-bottom: 10px; }
 
@@ -103,8 +105,7 @@ i {
 /* index */
 .carousel-item {
   object-fit: contain;
-  height: 520px; 
-}
+  height: 520px; }
 
 .nosotros__contenedor {
   font-family: "Exo", sans-serif;
@@ -158,19 +159,31 @@ i {
   padding: 30px 60px; }
 
 .parallax {
-  background-image: url("/assets/img/casilla-frente.jpg");
-  height: 700px;
+  width: 100%;
+  height: 400px;
+  background-image: url("../assets/img/casilla-frente.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 50px;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;}
+
+.parallax-h1{
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 69%);}
 
 .parallax-text{
-  text-align: center;
-  color: #242424;
-}
+  font-size: 24px;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgb(0 0 0 / 69%);}
 
 .button-parallax {
   font-family: "Exo", sans-serif;
@@ -180,8 +193,7 @@ i {
   padding: 10px 30px;
   border-radius: 5px;
   border-color: #32b359; 
-}
-
+  text-align: center;}
 
 /* productos */
 .titulo-productos {
@@ -335,9 +347,9 @@ section article ul li {
 
 /* estilos generales */
 .navbar{
-  margin: 15px;
+  /* margin: 15px; */
+  padding: 10px;
   display: flex;
-  /* flex-wrap: nowrap; */
 }
 
 .container-fluid{
@@ -371,16 +383,19 @@ section article ul li {
     flex-direction: column;
     margin: 15px;
   }
+
   .nosotros__contenedor--img {
       width: 100%;
       margin: 0;
       justify-content: center;
   }
+
   .historia__contenedor {
       margin: 15px;
       flex-direction: column-reverse;
       text-align: center;
   }
+
   .historia__contenedor--parrafo{
     text-align: start;
   }
@@ -390,6 +405,10 @@ section article ul li {
       flex-direction: column;
   }
   
+.parallax {
+  background-attachment: scroll;
+}
+
   /* productos */
   .productos__container {
       flex-direction: column;
