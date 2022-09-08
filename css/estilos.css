@@ -1,58 +1,3 @@
-@import url("https://fonts.googleapis.com/css2? family= Exo:wght@700 & display=swap");
-/* media queries */
-/* mobile */
-@media only screen and (max-width: 576px) {
-  /* estilos generales */
-  .logo {
-    width: 50%; }
-  .footer__container {
-    flex-direction: column;
-    margin-left: 30px; }
-  /* index */
-  .carousel-item {
-    width: 560px;
-    height: 250px;
-    margin: 10px; }
-  .nosotros__contenedor {
-    flex-direction: column;
-    margin: 20px; }
-  .nosotros__contenedor--img {
-    width: 500px;
-    margin: 20px; }
-  .historia__contenedor {
-    margin: 20px;
-    flex-direction: column-reverse; }
-  .recomendaciones {
-    font-size: 1.6rem;
-    flex-direction: column; }
-  /* productos */
-  .productos__container {
-    flex-direction: column;
-    align-items: center; }
-  /* productos items */
-  .caracteristicas__container {
-    flex-direction: column; }
-  .caracteristica__container--img {
-    width: 90%; }
-  .accesorios__container {
-    flex-direction: column; }
-  .accesorios__container--article2 {
-    margin-top: 20px;
-    margin-left: 15px; }
-  /* galeria */
-  .galeria__container {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(15, 1fr); }
-  /* contacto */
-  .main__container {
-    flex-direction: column;
-    justify-content: center; }
-  .ubicacion__container {
-    margin: 30px; }
-  .maps {
-    width: 500px;
-    height: 350px; } }
-
 * {
   margin: 0%;
   padding: 0%; }
@@ -64,7 +9,6 @@ body {
 /* header{
     position: sticky;
     top: 0;
-    esto no me funciona!!! preguntar a vani???
 } */
 .navbar {
   background-color: white; }
@@ -213,6 +157,32 @@ i {
 .recomendaciones-items {
   padding: 30px 60px; }
 
+.parallax {
+  background-image: url("/assets/img/casilla-frente.jpg");
+  height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.parallax-text{
+  text-align: center;
+  color: #242424;
+}
+
+.button-parallax {
+  font-family: "Exo", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #32b359;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-color: #32b359; 
+}
+
+
 /* productos */
 .titulo-productos {
   font-family: "Exo", sans-serif;
@@ -277,6 +247,17 @@ section article ul li {
 .accesorios__container--opcionales {
   flex-direction: column;
   align-items: flex-start; }
+
+.button-productos {
+  font-family: "Exo", sans-serif;
+  font-size: 0.8rem;
+  color: white;
+  background-color: #32b359;
+  margin: 15px;
+  margin-top: 0px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #32b359; }
 
 /*galeria (GRID)*/
 .galeria__container {
